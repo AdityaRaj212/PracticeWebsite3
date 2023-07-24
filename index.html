@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Walk through your first HTML page | blog.codingninjas.in</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <link rel="stylesheet" href="style.css" />
+      <a href="http://blog.codingninjas.in/" id="logo"
+        ><img
+          src="https://ninjasfiles.s3.amazonaws.com/0000000000001394.png"
+          alt="coding ninjas logo"
+      /></a>
+
+      <div>
+        <p id="site-title">
+          <a href="http://blog.codingninjas.in/">blog.codingninjas.in</a>
+        </p>
+        <p id="about-site">Coding Ninjas Official Blog</p>
+      </div>
+
+      <div id="header-image-container">
+        <img
+          src="https://ninjasfiles.s3.amazonaws.com/0000000000001395.png"
+          alt="coding ninjas love coding"
+        />
+      </div>
+    </header>
+
+    <div id="content">
+      <main>
+        <header id="blog-header">
+          <h1>A step-by-step walk through of your first HTML page</h1>
+        </header>
+
+        <div id="author-container">
+          <div id="author-logo">
+            <img
+              src="data:image/png;base64,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"
+              alt="author logo"
+            />
+          </div>
+
+          <div id="author-name">
+            <a
+              href="https://www.linkedin.com/in/aditya-raj-shit-b30129258/"
+              target="_blank"
+              >Aditya Raj Shit</a
+            >
+          </div>
+          <div id="author-topic">
+            <a
+              href="https://www.geeksforgeeks.org/web-development/#:~:text=Discuss(30),over%20the%20internet%20i.e.%20websites."
+              target="_blank"
+              >Web Development</a
+            >
+          </div>
+        </div>
+
+        <article id="blog-content">
+          <div id="blog-image-container">
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000010_1548494846_coding-ninjas-step-by-step.png"
+              alt="Step-by-step walk"
+            />
+          </div>
+
+          <p>
+            HTML is short for HyperText Markup Language.Basically, it's the
+            âcodeâ behind every webpage even this one. If you're just beginning
+            to learn HTML, let us tell you that itâs a fairly easy task. HTML,
+            without styling, canât do anything more than setting a layout,
+            drawing a table, or creating frames â but it is handy as it helps
+            you structure the content correctly, which is important when you sit
+            down to add style to your HTML.
+          </p>
+
+          <img
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000005_1548426333_coding-ninjas-code-screenshot.jpeg"
+            alt="Code screenshot from laptop"
+          />
+
+          <p>
+            However simple this might seem, it is a mighty useful tool when it
+            comes to full-fledged web development. Various tools easily
+            eliminate the HTML coding from your work process â but if you want
+            to be in full control of your web-page, youâll need to have some
+            command over HTML.
+          </p>
+
+          <p>
+            Through this article, we aim to give you the essential HTML building
+            blocks thatâll help you get up and running. Reading this, youâll be
+            able to understand an HTML source code and even modify it for your
+            own good!
+          </p>
+
+          <section>
+            <h3>Step One - TAGS</h3>
+
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000004_1548426302_coding-ninjas-angle-brackets.png"
+              alt="Angle Brackets photo"
+            />
+
+            <p>
+              Tags are what youâll see the most when you look at any HTML source
+              code. A tag can ideally be seen as a wrapper to any item on your
+              HTML document. Tags tell what magic is to be done on the content
+              enclosed by them.
+            </p>
+
+            <p>Letâs look at two types of tags:</p>
+
+            <ol>
+              <li>
+                &lt;tag-example-1&gt;I need a closign tag&lt;tag-example-1&gt;
+              </li>
+              <li>&lt;tag-example-2/&gt;I don't need a cloding tag.</li>
+            </ol>
+
+            <p>
+              In the first example, the sentence is wrapped by two tags. The
+              first one is called the opening tag and the second one is called
+              the closing tag. Everything in between is affected by the
+              properties of the tag. Very commonly used examples of such tags
+              are &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, &lt;strong&gt;, etc.
+            </p>
+
+            <p>
+              The second example tags about loner tags â as in, they donât need
+              a closing tag to function. Although itâs not required, these type
+              of tags are often written as &lt;tag/&gt; to make the debugging of
+              code easier. Common examples of such tags are &lt;hr/&gt; â used
+              for horizontal line, &lt;br/&gt; â to break the line, etc.
+            </p>
+          </section>
+
+          <section>
+            <h3>
+              Step Two â HTML, HEAD, and BODY: The three pillars of your
+              document
+            </h3>
+
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000007_1548426400_coding-ninjas-html-head-body.jpg"
+              alt="Head Body photo"
+            />
+
+            <p>
+              These tags are essential for any HTML document. They parcel out
+              the significant parts of your HTML code.
+            </p>
+
+            <ul>
+              <li>
+                &lt;BODY&gt; &lt;/BODY&gt; is placed below your &lt;HEAD&gt;
+                tag, and everything that you want to be displayed on your screen
+                comes under this tag. Text, images, links, and pretty much
+                anything you can see in your browser live inside this tag.
+              </li>
+              <br />
+              <li>
+                &lt;HTML&gt; &lt;/HTML&gt; wraps your entire code. Everything
+                else in your HTML document needs to come inside these tags.
+              </li>
+              <li>
+                &lt;HEAD&gt; &lt;/HEAD&gt; includes things like title, styles,
+                and scripts. Head is usually present at the top (hah!), just
+                inside the &lt;/HTML&gt; tag.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Step three- A few tags thatâll make your page pretty</h3>
+
+            <p>
+              Now that you know how to set up the skeleton of your document,
+              let's proceed with the things that will go inside your
+              &lt;BODY&gt; tag and do some magic!
+            </p>
+
+            <p>Some basic text formatting tags:</p>
+
+            <ul>
+              <li>&lt;b&gt; &lt;/b&gt; makes your text look <b>bold</b></li>
+              <li>&lt;i&gt; &lt;/i&gt; makes you write in <i>cursive</i></li>
+              <li>
+                &lt;u&gt; &lt;/u&gt; <u>underlines</u> what you just wrote
+              </li>
+            </ul>
+
+            <p>For example, this piece of code</p>
+
+            <hr />
+            <code>&lt;html&gt;</code>
+            <br /><br />
+            <code>&ensp; &lt;head&gt; &lt;/head&gt;</code>
+            <br /><br />
+            <code>&ensp; &lt;body&gt;</code>
+            <br /><br />
+            <code
+              >&ensp; &ensp; &lt;i&gt; I am italics! &lt;/i&gt;
+              &lt;br/&gt;</code
+            >
+            <br />
+            <code
+              >&ensp; &ensp; &lt;b&gt; I am bold! &lt;/b&gt; &lt;br/&gt;</code
+            >
+            <br />
+            <code
+              >&ensp; &ensp; &lt;u&gt; And me, well, I'm underlined! &lt;/u&gt;
+              &lt;br/&gt;</code
+            >
+            <br /><br />
+            <code>&ensp; &lt;/body&gt;</code>
+            <br /><br />
+            <code>&lt;/html&gt;</code>
+            <hr />
+
+            <br />
+            <br />
+
+            <p>
+              Should produce something like this on your browser: Donât fret too
+              much about the &lt;br/&gt;. Itâs just for breaking the line so
+              that you can start from the next line. Enter key does little when
+              it comes to changing lines in your HTML document.
+            </p>
+
+            <img
+              src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000009_1548426552_coding-ninjas-html-page-screenshot.png"
+              alt="Bold, Italic and Underline"
+            />
+
+            <p><b>Tags to help you structure your content:</b></p>
+
+            <ul>
+              <li>
+                &lt;br/&gt; breaks the line, making you continue to the next
+                line
+              </li>
+              <li>
+                &lt;p&gt; stands for paragraph. It divides your content into
+                paragraphs
+              </li>
+            </ul>
+
+            <p>
+              <i
+                >Note: You need to use these tags as space and enter keys do
+                very little when it comes to formatting content inside an HTML
+                document.</i
+              >
+            </p>
+
+            <section>
+              <h4>Heading Tags:</h4>
+
+              <p>
+                HTML provides you with six tags, from &lt;H1&gt; &lt;/H1&gt; to
+                &lt;H6&gt; &lt;/H6&gt; to help you create different sized
+                headers quickly.
+              </p>
+
+              <img
+                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000006_1548426364_coding-ninjas-headings.png"
+                alt="All heading photos"
+              />
+            </section>
+
+            <section>
+              <h4>Inserting an Image:</h4>
+
+              <p>
+                All thatâs good, but what fun without images on the webpage?
+                Donât worry, &lt;IMG/&gt; to the rescue! The image tag has a
+                mandatory attribute called âsourceâ. Basically, it tells the
+                browser where it should look for the image. The syntax goes
+                something like:
+              </p>
+
+              <p><i>&lt; img src = âpath_to_your_imageâ /&gt; </i></p>
+
+              <p>
+                Furthermore, it also has attributes like height and width that
+                let you specify the height and width you want your image to
+                take.
+              </p>
+            </section>
+
+            <section>
+              <h4>Lists:</h4>
+
+              <p>
+                HTML has two types of lists â ordered and unordered. Each item
+                of your list has to be enclosed in a tag. The syntax for
+                creating a list is fairly simple.
+              </p>
+
+              <p>Suppose you want to create a list like:</p>
+
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+
+              <p>The following code will easily do the job for you:</p>
+
+              <hr />
+              <code>&lt;ul&gt;</code>
+              <br />
+              <code>&ensp; &lt;li&gt;</code>
+              <code>Item 1</code>
+              <code>&lt;/li&gt;</code>
+              <br />
+              <code>&ensp; &lt;li&gt;</code>
+              <code>Item 2</code>
+              <code>&lt;/li&gt;</code>
+              <br />
+              <code>&ensp; &lt;li&gt;</code>
+              <code>Item 3</code>
+              <code>&lt;/li&gt;</code>
+              <br />
+              <code>&lt;/ul&gt;</code>
+              <hr />
+
+              <br />
+              <br />
+
+              <p>
+                This, by the way, was an example of an unordered list. For an
+                ordered list, all you need to do is replace &lt;ul&gt; with
+                &lt;ol&gt; and &lt;/ul&gt; with &lt;/ol&gt;.
+              </p>
+
+              <p>Letâs see what the following code does:</p>
+
+              <hr />
+              <code>&lt;html&gt;</code>
+              <br /><br />
+              <code>&ensp; &lt;head&gt; &lt;/head&gt;</code>
+              <br /><br />
+              <code>&ensp; &lt;body&gt;</code>
+              <br /><br />
+              <code>&ensp; &ensp; &lt;ul&gt;</code>
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am unordered list's item 1!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am unordered list's item 2!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am unordered list's item 3!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am unordered list's item 4!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code>&ensp; &ensp; &lt;/ul&gt;</code>
+              <br />
+              <code>&ensp; &ensp; &lt;ol&gt;</code>
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am ordered list's item 1!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am ordered list's item 2!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am ordered list's item 3!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code
+                >&ensp; &ensp; &ensp; &lt;li&gt; I am ordered list's item 4!
+                &lt;/li&gt;</code
+              >
+              <br />
+              <code>&ensp; &ensp; &lt;/ol&gt;</code>
+              <br /><br />
+              <code>&ensp; &lt;/body&gt;</code>
+              <br /><br />
+              <code>&lt;/html&gt;</code>
+              <hr />
+
+              <br />
+              <br />
+
+              <img
+                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000008_1548426521_coding-ninjas-html-page-list-screenshot.png"
+                alt="Ordered and Unordered List on HTML page"
+              />
+
+              <p>
+                All of these tags, when arranged coherently, will provide you
+                with a simple webpage consisting of images, headings, and lists.
+                Further, there are various tags that HTML supports, and we
+                thoroughly recommend you to check them out and play with them!
+              </p>
+            </section>
+
+            <section>
+              <h2>In Conclusion</h2>
+
+              <p>
+                You now know enough to skim through and understand any part of
+                an HTML code. We request you to go ahead and try skimming
+                through the source code of any website (youâll find some tags
+                you donât know, but thatâs how you learn!). Oh, and welcome to
+                the world of web development. With HTML under your belt, your
+                next stop should be making your page look beautiful using CSS.
+              </p>
+
+              <p>
+                Let us know if you had any problems in the article, and donât
+                forget to have a look at a source code or two!
+              </p>
+            </section>
+          </section>
+        </article>
+      </main>
+
+      <aside id="side-bar">
+        <section id="subscription" class="widget">
+          <h4 class="widget-title">
+            Subscribe now to stay updated with new technology trends
+          </h4>
+
+          <div id="subscribe form">
+            <form action="">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+              <label for="email">Email*</label>
+              <input type="text" name="email" id="email" required />
+              <button type="submit" id="submit-btn">Subscribe</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="search" class="widget">
+          <div id="searchbox">
+            <input type="text" id="search-box" placeholder="Search..." />
+            <button type="submit">
+              <img
+                src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000013_1549319004_search-icon.png"
+                alt="search"
+              />
+            </button>
+          </div>
+        </section>
+
+        <section id="posts" class="widget">
+          <ul>
+            <li>
+              <p>
+                <a href=""
+                  >Guiding path for a fresher to start their career in software
+                  programming/development</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href=""
+                  >The undisputed truth about emotional support animal rhode
+                  island that the experts don't want you to hear</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href=""
+                  >The Best Plan to use for Emotional Support Animal Oregon</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href=""
+                  >How to find Emotional Support Animal Illiios Online</a
+                >
+              </p>
+            </li>
+            <li>
+              <p><a href="">Career opportunities after mastering Python</a></p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="recent-comments" class="widget">
+          <h4 class="widget-title">Recent Comments</h4>
+
+          <ul>
+            <li>
+              <p>
+                <a class="name" href="">A V Yogesh Rao</a>
+                <span>on</span>
+                <a href=""
+                  >Get ready for the ultimate summer scholarship test!</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <a class="name" href="">Strony Internetowe</a>
+                <span>on</span>
+                <a href="">Recursion(The good, the bad and the not so ugly)</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a class="name" href="">Philip Herb</a>
+                <span>on</span>
+                <a href="">Recursion(The good, the bad and the not so ugly)</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a class="name" href="">Pascher Vigra</a>
+                <span>on</span>
+                <a href="">Recursion(The good, the bad and the not so ugly)</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a class="name" href="">Ananya Burman</a>
+                <span>on</span>
+                <a href="">Code your way through Competitive programming!</a>
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="categories" class="widget">
+          <h4 class="widget-title">Categories</h4>
+
+          <ul>
+            <li><a href="">Android</a></li>
+            <li><a href="">General</a></li>
+            <li><a href="">Interview Experiences</a></li>
+            <li><a href="">Machine Learning</a></li>
+            <li><a href="">Ruby</a></li>
+            <li><a href="">Uncategorized</a></li>
+            <li><a href="">Web Development</a></li>
+          </ul>
+        </section>
+      </aside>
+
+      <div id="social">
+        <a
+          id="facebook"
+          class="social-btn"
+          target="_blank"
+          href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F03%2F13%2Fa-step-by-step-walk-through-of-your-first-html-page%2F"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png"
+            alt="fb"
+        /></a>
+
+        <a
+          id="linkedin"
+          class="social-btn"
+          target="_blank"
+          href="https://www.linkedin.com/shareArticle?mini=true&title=Best+Coding+Practices+for+Hassle-free+Programming&url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png"
+            alt="in"
+        /></a>
+
+        <a
+          id="twitter"
+          class="social-btn"
+          target="_blank"
+          href="https://twitter.com/share?url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F&text=Best+Coding+Practices+for+Hassle-free+Programming"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000016_1549330452_twitter-logo.png"
+            alt="twi"
+        /></a>
+
+        <a
+          id="gmail"
+          class="social-btn"
+          target="_blank"
+          href="https://plus.google.com/share?url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000017_1549330467_google-logo.png"
+            alt="g+"
+        /></a>
+
+        <a
+          id="whatsapp"
+          class="social-btn"
+          target="_blank"
+          href="whatsapp://send?text=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000018_1549330485_whatsapp-logo.png"
+            alt="w-app"
+        /></a>
+
+        <a
+          id="mail"
+          class="social-btn"
+          target="_blank"
+          href="mailto:adresse@example.com?subject=7%20best%20coding%20practices%20to%20follow%20%7C%20blog.codingninjas.in&body=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"
+          ><img
+            class="social-img"
+            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000019_1549330510_mail-logo.png"
+            alt="mail"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
